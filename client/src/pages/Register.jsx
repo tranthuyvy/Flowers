@@ -13,7 +13,7 @@ const Register = () => {
       </form>
       <span>
           Do you have an account <Link to="/login">Login</Link>
-        </span>
+      </span>
     </div>
   )
 }
