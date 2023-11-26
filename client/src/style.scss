@@ -4,7 +4,7 @@ $lightRed: rgba(235, 196, 196, 0.6);
   display: flex;
   justify-content: center;
   .container {
-    width: 100%;
+    width: 90%;
 
     .link {
       text-decoration: none;
@@ -117,13 +117,13 @@ $lightRed: rgba(235, 196, 196, 0.6);
     footer {
       margin-top: 100px;
       padding: 20px;
-      background-color: $lightRed;
+      background-color: white;
       display: flex;
       align-items: center;
       justify-content: space-between;
       font-size: 12px;
       img {
-        height: 50px;
+        height: 100px;
       }
     }
 
