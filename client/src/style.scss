@@ -349,6 +349,7 @@ $lightRed: rgba(235, 196, 196, 0.6);
 
           h1{
             font-size: 20px;
+            margin-bottom: 3px;
           }
 
           .file{
@@ -377,10 +378,18 @@ $lightRed: rgba(235, 196, 196, 0.6);
           }
 
           .cat{
+            margin: 2px;
             display: flex;
             align-items: center;
             gap: 2px;
-            color: rgba(201, 0, 0);
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+            font-size: 14px;
+
+            .input[type="radio"]{
+              margin-right: 7px;
+              accent-color: red;
+            }
           }
         }
       }
