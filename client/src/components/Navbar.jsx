@@ -15,24 +15,18 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="links">
-          <Link className="link" to="/?cat=art">
-            <h6>ART</h6>
+          <Link className="link" to="/?cat=flowers">
+            <h6>HOA TƯƠI</h6>
           </Link>
-          <Link className="link" to="/?cat=science">
-            <h6>SCIENCE</h6>
+          <Link className="link" to="/?cat=trap">
+            <h6>TRÁP CƯỚI</h6>
           </Link>
-          <Link className="link" to="/?cat=technology">
-            <h6>TECHNOLOGY</h6>
-          </Link>
-          <Link className="link" to="/?cat=cinema">
-            <h6>CINEMA</h6>
-          </Link>
-          <Link className="link" to="/?cat=design">
+          {/* <Link className="link" to="/?cat=design">
             <h6>DESIGN</h6>
           </Link>
           <Link className="link" to="/?cat=food">
             <h6>FOOD</h6>
-          </Link>
+          </Link> */}
           <span>{currentUser?.username}</span>
           {currentUser ? (
             <span onClick={logout}>Logout</span>

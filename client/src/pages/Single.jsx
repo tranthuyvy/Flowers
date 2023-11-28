@@ -7,7 +7,7 @@ import axios from "axios";
 import moment from "moment";
 import { useContext } from "react";
 import { AuthContext } from "../context/authContext";
-// import DOMPurify from "dompurify";
+import DOMPurify from "dompurify";
 
 const Single = () => {
   const [post, setPost] = useState({});
@@ -45,8 +45,7 @@ const Single = () => {
   return (
     <div className="single">
       <div className="content">
-        {/* <img src={`../upload/${post?.img}`} alt="" /> */}
-        <img src={post?.img} alt="" />
+        <img src={`../upload/${post?.img}`} alt="" />
         <div className="user">
           {post.userImg && 
           <img
@@ -67,13 +66,13 @@ const Single = () => {
           )}
         </div>
         <h1>{post.title}</h1>
-        <p>{post.description}</p>
-        {/* <p
+        {/* <p>{getText(post.description)}</p> */}
+        <p
           dangerouslySetInnerHTML={{
             __html: DOMPurify.sanitize(post.description),
           }}
         >
-        </p>       */}
+        </p>      
       </div>
       <Menu cat={post.cat}/>
     </div>
