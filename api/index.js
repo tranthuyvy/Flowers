@@ -2,6 +2,7 @@ import express from "express";
 import authRoutes from "./routes/auth.js";
 import userRoutes from "./routes/users.js";
 import postRoutes from "./routes/posts.js";
+import categoryRoutes from "./routes/category.js";
 import cookieParser from "cookie-parser";
 import multer from "multer";
 
@@ -32,6 +33,7 @@ app.post("/api/upload", upload.single("file"), function (req, res) {
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);
+app.use("/api/categorys", categoryRoutes);
 
 app.listen(8800, () => {
   console.log("Server is running!");
